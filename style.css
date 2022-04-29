@@ -42,9 +42,9 @@
   }
 
   .logo:hover{
-    -webkit-transform: rotateZ(-10deg);
-    -ms-transform: rotateZ(-10deg);
-    transform: rotateZ(-10deg);
+    -webkit-transform: rotateZ(10deg);
+    -ms-transform: rotateZ(10deg);
+    transform: rotateZ(10deg);
     transition: 1s ease;
     }
 
@@ -74,7 +74,7 @@
 
 .DRA:hover:after {
   transform: scaleX(1);
-  transform-origin: top right;
+  transform-origin: bottom left;
 }
 
 .contact {
