@@ -173,10 +173,15 @@
   }
 
   .container-image { 
-    text-align: center;
-    padding-right: 14px;
-    padding-left: 14px;
-    transition: 0.1s ease-in; margin: 0;
+    transition: 0.1s ease-in; margin: 0;  
+    text-align: right !important;
+    margin: auto;
+    max-width: 814px;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
   @media screen and (max-width: 1666px) {
