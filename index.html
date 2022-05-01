@@ -22,6 +22,117 @@
     </div>
   </nav>
 
+   <!-- Modal Zoom -->
+   <div class="modal fade zoom" id="modalZoom2">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="card">
+          <div class="card-inner card-inner-lg">
+            <div class="nk-block-head">
+              <div class="nk-block-head-content">
+                <a class="navbar" style="justify-content: center;" href="#" class="logo-link">
+                  <a href="#">
+                    <img style="width:120px; margin: 1.5rem auto; display: block;" src="/images/pencom_big.png" />
+                  </a>
+                </a>
+                <div class="nk-block-des">
+                </div>
+              </div>
+            </div>
+            <form id="checkNINForm" method="POST" action="">
+              <h4 id="headerText">Do you have a National Identity Number (NIN)? </h5>
+                <div class="row my-4" id="answerNINForm">
+                  <div class="col-6">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" value="Yes" id="Yes" name="answerNIN" class="custom-control-input">
+                      <label class="custom-control-label" for="Yes">YES</label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="custom-control custom-radio">
+                      <input type="radio" value="No" id="No" name="answerNIN" class="custom-control-input">
+                      <label class="custom-control-label" for="No">NO</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mt-4 noNINState d-none">
+                  <div class="mb-2">
+                    <div class="form-group">
+                      <label class="form-label" for="default-01">
+                        RSA PIN</label>
+                      <div class="form-control-wrap">
+                        <div class="form-text-hint">
+                          <span class="overline-title">pen</span>
+                        </div>
+                        <input disabled required type="number" class="form-control special-rsa" id="noRSA" name="noNINRSA" placeholder="1234567891244">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-2">
+                    <div class="form-group">
+                      <label class="form-label" for="default-01">
+                        Email</label>
+                      <div class="form-control-wrap">
+                        <input required type="email" class="form-control" id="noNINEmail" placeholder="example@mail.com">
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="mb-2">
+                    <div class="form-group">
+                      <label class="form-label mand" for="default-01">Phone
+                        Number</label>
+                      <div class="form-control-wrap">
+                        <input required type="number" maxlength="11" class="form-control" id="noNINPhone" placeholder="08112348901">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-2">
+                    <div class="form-group">
+                      <label class="form-label" for="default-01">
+                        Organization</label>
+                      <select id="noNINOrg" required class="form-control js-data-example-ajax">
+                        <option value=""> Select Option</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-2">
+                    <div class="form-group">
+                      <label class="form-label" for="default-01">
+                        Location</label>
+                      <div class="form-control-wrap">
+                        <input required type="text" class="form-control" id="noNINLoc" placeholder="UBA, Fadeyi Lagos">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="newState">
+                    <div class="form-group">
+                      <label class="form-label mand" for="default-01">State</label>
+                      <select required class="form-control states" id="noNINState">
+                        <option value="" selected="selected">- Select -</option>
+
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mt-4 justify-between">
+                    <button type="submit" id="checkNINBtn" name="checkNINBtn" class="btn btn-lg btn-primary">Submit</button>
+                  </div>
+                </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="mid-body">
           <div class="text">
             <h2 class="DRE">Data Recapture Exercise</h3>
